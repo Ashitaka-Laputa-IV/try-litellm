@@ -1,0 +1,23 @@
+[project]
+name = "try-litellm"
+version = "0.1.0"
+description = "Minimal langchain-litellm + OpenCode Go smoke test"
+readme = "README.md"
+authors = [
+    { name = "Ashitaka-Laputa-IV", email = "Ashitaka-Laputa-IV@outlook.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain>=1.4.8",
+    "langchain-litellm>=0.11.2",
+    "litellm[mcp]==1.109.0.dev2",
+    "openai>=2.54.0",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+try-litellm = "try_litellm:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
