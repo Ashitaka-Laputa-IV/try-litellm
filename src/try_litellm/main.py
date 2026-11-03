@@ -13,3 +13,6 @@ def main() -> None:
     )
     print(f"\n{type(llm).__name__}: {llm.model}")
     print(llm.invoke("Reply with exactly: OpenCode Go is working.").content)
+
+if __name__ == "__main__":
+    main()
